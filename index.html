@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <script src="app.js" defer></script>
     <title>Quiz App</title>
@@ -20,10 +22,20 @@
         </div>
         <!-- body -->
         <div class="body">
-          <div class="body__menu"></div>
-          <div class="body__quiz"></div>
-          <div class="body__result"></div>
-          <div class="body__detail"></div>
+          <!-- menu -->
+          <div class="body__menu body-style">
+            <h2 class="menu__title">Menu</h2>
+            <button class="btn menu__btn--start">Start the test</button>
+            <button class="btn menu__btn--info">info</button>
+          </div>
+
+          <!-- Quiz -->
+          <div class="body__quiz no-display">quiz</div>
+
+          <!-- Result -->
+          <div class="body__result no-display">result</div>
+          <!-- Detail -->
+          <div class="body__detail no-display">detail</div>
         </div>
         <!-- footer -->
         <div class="footer">
