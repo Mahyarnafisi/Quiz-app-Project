@@ -146,6 +146,7 @@ p {
   align-items: center;
   justify-content: center;
   margin-left: 1rem;
+  font-size: 1.8rem;
 }
 .body-style {
   width: 100%;
@@ -179,14 +180,17 @@ p {
   align-items: center;
   justify-content: center;
   margin-left: 1rem;
+  font-size: 1.8rem;
 }
 
 .display {
   display: flex;
+  animation: opacityInOut 1s alternate;
 }
 
 .no-display {
   display: none;
+  animation: opacityInOut 1s backwards;
 }
 
 .deactive {
@@ -198,6 +202,15 @@ p {
 .deactive:hover {
   background-color: var(--color-gray);
   color: #14213d;
+}
+
+@keyframes opacityInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

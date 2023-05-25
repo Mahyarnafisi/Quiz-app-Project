@@ -152,6 +152,7 @@ p {
         align-items: center;
         justify-content: center;
         margin-left: 1rem;
+        font-size: 1.8rem;
       }
     }
   }
@@ -203,6 +204,7 @@ p {
       align-items: center;
       justify-content: center;
       margin-left: 1rem;
+      font-size: 1.8rem;
     }
   }
 }
@@ -210,10 +212,12 @@ p {
 // !function classes--------------------------------------//
 .display {
   display: flex;
+  animation: opacityInOut 1s alternate;
 }
 
 .no-display {
   display: none;
+  animation: opacityInOut 1s backwards;
 }
 
 .deactive {
@@ -224,5 +228,14 @@ p {
   &:hover {
     background-color: var(--color-gray);
     color: #14213d;
+  }
+}
+// !Animation--------------------------------------------//
+@keyframes opacityInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
