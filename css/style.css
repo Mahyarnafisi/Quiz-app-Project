@@ -23,6 +23,7 @@
 html {
   font-size: 62.5%;
   font-family: "Wix Madefor Display", sans-serif;
+  filter: saturate(120%);
 }
 
 body {
@@ -104,6 +105,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s;
 }
 
 .head {
