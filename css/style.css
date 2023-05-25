@@ -1,0 +1,135 @@
+:root {
+  --color-bg-1: #14213d;
+  --color-bg-2: #118ab2;
+  --color-primary-1: #06d6a0;
+  --color-primary-2: #ffd166;
+  --color-primary-3: #ef476f;
+  --color-secondary-1: #2ec4b6;
+  --color-secondary-2: #f7b801;
+  --color-secondary-3: #3d348b;
+  --color-white: #edf2f4;
+  --color-gray: #8d99ae;
+  --color-black: #000814;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-black);
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--color-primary-3);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-white);
+  border-top: 2px solid rgba(255, 255, 255, 0.2078431373);
+  border-left: 2px solid rgba(255, 255, 255, 0.1450980392);
+  text-transform: capitalize;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 8, 20, 0.1450980392);
+}
+
+h1 {
+  font-size: 4.8rem;
+  color: var(--color-secondary-2);
+  letter-spacing: -2px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 3.2rem;
+  color: var(--color-secondary-2);
+  letter-spacing: -1px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 2.1rem;
+  color: var(--color-secondary-2);
+  font-weight: 600;
+  line-height: 1;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.container {
+  width: 100%;
+  padding: 0 1vw;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 50%;
+  height: 20rem;
+  background-color: var(--color-secondary-3);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head {
+  width: 100%;
+  height: min-content;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid var(--color-gray);
+}
+
+.body {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+  height: min-content;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid var(--color-gray);
+}
+
+/*# sourceMappingURL=style.css.map */
