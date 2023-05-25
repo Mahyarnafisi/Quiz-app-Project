@@ -55,6 +55,7 @@ button {
   text-transform: capitalize;
   box-shadow: 0 0.2rem 0.5rem #00081425;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 h1 {
@@ -140,10 +141,18 @@ p {
       margin-bottom: 4rem;
     }
 
-    .menu__btn--start {
-    }
-
-    .menu__btn-info {
+    .menu__btn--start,
+    .menu__btn--info {
+      &:hover {
+        background-color: var(--color-secondary-2);
+        color: #14213d;
+      }
+      i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+      }
     }
   }
 
@@ -180,7 +189,22 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
   border-top: 2px solid var(--color-gray);
+
+  &__btn--startover,
+  &__btn--result {
+    &:hover {
+      background-color: var(--color-secondary-2);
+      color: #14213d;
+    }
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1rem;
+    }
+  }
 }
 
 // !function classes--------------------------------------//
@@ -190,4 +214,15 @@ p {
 
 .no-display {
   display: none;
+}
+
+.deactive {
+  border: 2px solid var(--color-gray);
+  color: var(--color-gray);
+  opacity: 75%;
+  cursor: not-allowed;
+  &:hover {
+    background-color: var(--color-gray);
+    color: #14213d;
+  }
 }
