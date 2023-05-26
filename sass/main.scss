@@ -3,7 +3,7 @@
   --color-bg-2: #118ab2;
   --color-primary-1: #06d6a0;
   --color-primary-2: #ffd166;
-  --color-primary-3: #ef476f;
+  --color-primary-3: #ee3560;
 
   --color-secondary-1: #2ec4b6;
   --color-secondary-2: #f7b801;
@@ -23,6 +23,7 @@
 
 html {
   font-size: 62.5%;
+  // font-size: calc(0.2vw + 0.1vh + 1vmin);
   font-family: "Wix Madefor Display", sans-serif;
 }
 
@@ -79,11 +80,17 @@ h3 {
   font-weight: 600;
   line-height: 1;
 }
+h4 {
+  font-size: 1.8rem;
+  color: var(--color-secondary-2);
+  font-weight: 800;
+  line-height: 1.5;
+}
 
 p {
   font-size: 1.6rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 // !--------------------------------------------//
 .container {
@@ -98,7 +105,7 @@ p {
 
 .app {
   width: 75%;
-  max-width: 40rem;
+  max-width: 50rem;
   height: min-content;
   background-color: var(--color-secondary-3);
   border-radius: 1rem;
@@ -128,7 +135,7 @@ p {
   align-items: stretch;
   justify-content: center;
   width: 100%;
-  height: 40rem;
+  height: min-content;
   align-self: stretch;
 
   &__menu {
@@ -147,6 +154,7 @@ p {
       align-items: stretch;
       flex-direction: column;
       justify-content: center;
+
       gap: 1rem;
     }
     .menu__btn--start,
@@ -167,16 +175,76 @@ p {
     .rules {
       list-style: none;
       display: flex;
-      align-items: flex-start;
-      justify-content: center;
+      align-items: center;
+      justify-content: flex-start;
       flex-direction: column;
+      text-align: center;
+      margin-bottom: 1rem;
       &__item {
         font-size: 1.6rem;
+        color: var(--color-white);
+        text-align: left;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
       }
     }
   }
 
   &__quiz {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    .quiz__question {
+      margin-bottom: 4rem;
+      line-height: 1.5;
+    }
+    .option-container {
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.6rem;
+      font-weight: 700;
+      padding: 1.5rem;
+      border: 2px solid var(--color-bg-2);
+      border-radius: 1rem;
+      color: #118ab2;
+      transition: all 0.3s;
+      background-color: var(--color-bg-1);
+      cursor: pointer;
+      &:hover {
+        border: 2px solid var(--color-primary-1);
+        color: var(--color-secondary-1);
+      }
+    }
+
+    .footer {
+      margin-top: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .timer {
+        font-size: 1.6rem;
+        color: var(--color-secondary-1);
+        font-weight: 600;
+      }
+      .btn {
+        &:hover {
+          background-color: var(--color-secondary-2);
+          color: var(--color-secondary-3);
+          border: 2px solid var(--color-secondary-2);
+        }
+      }
+    }
   }
 
   &__result {
@@ -204,13 +272,13 @@ p {
 .footer {
   width: 100%;
   height: min-content;
-  padding: 2rem;
+  // padding: 2rem;
   // border: 2px dotted green;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  border-top: 2px solid var(--color-gray);
+  // border-top: 2px solid var(--color-gray);
 
   &__btn--startover,
   &__btn--result {
@@ -241,13 +309,26 @@ p {
 
 .deactive {
   border: 2px solid var(--color-gray);
-  color: var(--color-gray);
+  color: var(--color-white);
   opacity: 75%;
-  cursor: not-allowed;
+  cursor: not-allowed !important;
+  filter: contrast(70%);
   &:hover {
-    background-color: var(--color-gray);
-    color: #14213d;
+    border: 2px solid var(--color-bg-2) !important;
+    color: var(--color-bg-2) !important;
   }
+}
+
+.correct {
+  background-color: var(--color-primary-1) !important;
+  color: var(--color-bg-1) !important;
+  border: var(--color-primary-1) !important;
+}
+
+.wrong {
+  background-color: var(--color-primary-3) !important;
+  color: var(--color-bg-1) !important;
+  border: var(--color-primary-3) !important;
 }
 // !Animation--------------------------------------------//
 @keyframes opacityInOut {

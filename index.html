@@ -20,31 +20,46 @@
         <div class="head">
           <h1>Quiz app.</h1>
         </div>
+
         <!-- body -->
         <div class="body">
           <!-- menu -->
-          <div class="body__menu body-style">
+          <div class="body__menu no-display body-style">
             <h3 class="menu__title">Quiz Rules</h3>
             <ol class="rules">
-              <li class="rules__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li class="rules__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li class="rules__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li class="rules__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li class="rules__item">1. The rules are Lorem, ipsum dolor.</li>
+              <li class="rules__item">2. ,Lorem ipsum dolor sit.</li>
+              <li class="rules__item">3. Lorem, ipsum. here is.</li>
+              <li class="rules__item">4. lorem Lorem ipsum dolor sit.fine</li>
             </ol>
             <div class="menu__buttons">
-              <button class="btn menu__btn--start">Start the test <i class="fa-solid fa-check-double"></i></button>
-              <button class="btn menu__btn--info">info <i class="fa-solid fa-barcode"></i></button>
+              <button class="btn menu__btn--start">Start Quiz <i class="fa-solid fa-check-double"></i></button>
+              <button class="btn menu__btn--info">Info <i class="fa-solid fa-barcode"></i></button>
             </div>
           </div>
 
           <!-- Quiz -->
-          <div class="body__quiz no-display">quiz</div>
+          <div class="body__quiz body-style display">
+            <h4 class="quiz__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, provident?</h4>
+            <div class="option-container">
+              <p class="option correct">Lorem ipsum dolor sit amet.</p>
+              <p class="option">Lorem ipsum dolor sit.</p>
+              <p class="option">Lorem ipsum dolor sit amet consectetur.</p>
+              <p class="option">Lorem ipsum dolor sit .</p>
+            </div>
+            <div class="footer">
+              <p class="timer">Timer left: 00:30 Sec</p>
+              <button class="btn">Next Question <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
 
           <!-- Result -->
           <div class="body__result no-display">result</div>
+
           <!-- Detail -->
           <div class="body__detail no-display">detail</div>
         </div>
+
         <!-- footer -->
         <div class="footer no-display">
           <button class="btn footer__btn--startover deactive">Start Over <i class="fa-solid fa-arrows-rotate"></i></button>
