@@ -97,7 +97,8 @@ p {
 }
 
 .app {
-  width: 50%;
+  width: 75%;
+  max-width: 40rem;
   height: min-content;
   background-color: var(--color-secondary-3);
   border-radius: 1rem;
@@ -141,6 +142,7 @@ p {
 .body__menu .menu__btn--info:hover {
   background-color: var(--color-secondary-2);
   color: #14213d;
+  border: 2px solid var(--color-secondary-2);
 }
 .body__menu .menu__btn--start i,
 .body__menu .menu__btn--info i {
