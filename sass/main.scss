@@ -121,7 +121,7 @@ p {
 .head {
   width: 100%;
   height: min-content;
-  padding: 2rem;
+  padding: 4rem;
   // border: 2px dotted green;
   display: flex;
   align-items: center;
@@ -147,14 +147,14 @@ p {
 
     .menu__title {
       align-self: center;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
     .menu__buttons {
       display: flex;
       align-items: stretch;
       flex-direction: column;
       justify-content: center;
-
+      margin-top: 4rem;
       gap: 1rem;
     }
     .menu__btn--start,
@@ -329,6 +329,22 @@ p {
   background-color: var(--color-primary-3) !important;
   color: var(--color-bg-1) !important;
   border: var(--color-primary-3) !important;
+}
+
+.correct-tag {
+  font-size: 1.4rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.8rem;
+  background-color: var(--color-secondary-3);
+  color: var(--color-primary-1);
+}
+
+.wrong-tag {
+  font-size: 1.4rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.8rem;
+  background-color: var(--color-secondary-3);
+  color: var(--color-primary-3);
 }
 // !Animation--------------------------------------------//
 @keyframes opacityInOut {
