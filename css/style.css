@@ -169,7 +169,7 @@ p {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
   margin-bottom: 1rem;
@@ -177,7 +177,6 @@ p {
 .body__menu .rules__item {
   font-size: 1.6rem;
   color: var(--color-white);
-  text-align: left;
 }
 .body__menu .rules__item:not(:last-child) {
   margin-bottom: 1rem;
@@ -262,7 +261,7 @@ p {
   justify-content: center;
 }
 .body__result .result__score b {
-  font-size: 2.1rem;
+  font-size: 3rem;
   color: var(--color-secondary-2);
   padding: 0.5rem;
 }

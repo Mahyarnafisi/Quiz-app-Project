@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <script src="app.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
@@ -24,8 +24,8 @@
         <!-- body -->
         <div class="body">
           <!-- !menu -->
-          <div class="body__menu no-display body-style">
-            <h3 class="menu__title">Quiz Rules</h3>
+          <div id="menu" class="body__menu display body-style">
+            <!-- <h3 class="menu__title">Quiz Rules</h3>
             <ol class="rules">
               <li class="rules__item">1. The rules are Lorem, ipsum dolor.</li>
               <li class="rules__item">2. ,Lorem ipsum dolor sit.</li>
@@ -35,14 +35,14 @@
             <div class="menu__buttons">
               <button class="btn menu__btn--start">Start Quiz <i class="fa-solid fa-check-double"></i></button>
               <button class="btn menu__btn--info">Info <i class="fa-solid fa-barcode"></i></button>
-            </div>
+            </div> -->
           </div>
 
           <!-- !Quiz -->
           <!-- <span class="correct-tag">Correct</span>
-          <span class="wrong-tag">Wrong</span> -->
+            <span class="wrong-tag">Wrong</span> -->
 
-          <div class="body__quiz body-style no-display">
+          <div id="quiz" class="body__quiz body-style no-display">
             <h4 class="quiz__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, provident?</h4>
             <div class="option-container">
               <p class="option wrong">Lorem ipsum dolor sit amet</p>
@@ -57,7 +57,7 @@
           </div>
 
           <!-- !Result -->
-          <div class="body__result body-style display">
+          <div id="result" class="body__result body-style no-display">
             <h3 class="result__title">Quiz Result</h3>
             <div class="result__trophy">
               <i class="fa-solid fa-trophy"></i>
@@ -80,5 +80,6 @@
         </div>
       </div>
     </div>
+    <script src="quiz.js"></script>
   </body>
 </html>
