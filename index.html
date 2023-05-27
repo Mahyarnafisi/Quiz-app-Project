@@ -42,7 +42,7 @@
           <!-- <span class="correct-tag">Correct</span>
           <span class="wrong-tag">Wrong</span> -->
 
-          <div class="body__quiz body-style display">
+          <div class="body__quiz body-style no-display">
             <h4 class="quiz__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, provident?</h4>
             <div class="option-container">
               <p class="option wrong">Lorem ipsum dolor sit amet</p>
@@ -50,14 +50,24 @@
               <p class="option deactive">Lorem ipsum dolor sit amet consectetur.</p>
               <p class="option deactive">Lorem ipsum dolor sit .</p>
             </div>
-            <div class="footer">
+            <div class="quiz__footer footer">
               <p class="timer">Timer left: 00:30 Sec</p>
               <button class="btn">Next Question <i class="fa-solid fa-chevron-right"></i></button>
             </div>
           </div>
 
           <!-- Result -->
-          <div class="body__result no-display">result</div>
+          <div class="body__result body-style display">
+            <h3 class="result__title">Quiz Result</h3>
+            <div class="result__trophy">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <h3 class="result__score">You got 5 of 10 correct!</h3>
+            <div class="result__footer">
+              <button class="btn">Start Over <i class="fa-solid fa-rotate"></i></button>
+              <button class="btn">Check the result <i class="fa-solid fa-square-poll-vertical"></i></button>
+            </div>
+          </div>
 
           <!-- Detail -->
           <div class="body__detail no-display">detail</div>

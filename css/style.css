@@ -218,21 +218,63 @@ p {
   border: 2px solid var(--color-primary-1);
   color: var(--color-secondary-1);
 }
-.body__quiz .footer {
+.body__quiz .quiz__footer {
   margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.body__quiz .footer .timer {
+.body__quiz .quiz__footer .timer {
   font-size: 1.6rem;
   color: var(--color-secondary-1);
   font-weight: 600;
 }
-.body__quiz .footer .btn:hover {
+.body__quiz .quiz__footer .btn:hover {
   background-color: var(--color-secondary-2);
   color: var(--color-secondary-3);
   border: 2px solid var(--color-secondary-2);
+}
+.body__result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.body__result .result__title {
+  align-self: center;
+  margin: 2rem 0;
+}
+.body__result .result__trophy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+}
+.body__result .result__trophy i {
+  font-size: 12rem;
+  color: var(--color-white);
+}
+.body__result .result__score {
+  margin: 2rem 0;
+}
+.body__result .result__footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+.body__result .result__footer .btn {
+  gap: 1rem;
+}
+.body__result .result__footer .btn:hover {
+  background-color: var(--color-secondary-2);
+  color: var(--color-secondary-3);
+  border: 2px solid var(--color-secondary-2);
+}
+.body__result .result__footer .btn i {
+  font-size: 1.8rem;
 }
 .body-style {
   width: 100%;

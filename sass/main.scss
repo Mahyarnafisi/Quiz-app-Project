@@ -137,7 +137,7 @@ p {
   width: 100%;
   height: min-content;
   align-self: stretch;
-
+  // !Menu Section --------------------------------------------//
   &__menu {
     display: flex;
     align-items: stretch;
@@ -190,7 +190,7 @@ p {
       }
     }
   }
-
+  // !Quiz Section ------------------------------------------//
   &__quiz {
     display: flex;
     align-items: center;
@@ -227,7 +227,7 @@ p {
       }
     }
 
-    .footer {
+    .quiz__footer {
       margin-top: 4rem;
       display: flex;
       align-items: center;
@@ -246,14 +246,59 @@ p {
       }
     }
   }
-
+  // !Result section------------------------------------//
   &__result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .result__title {
+      align-self: center;
+      margin: 2rem 0;
+    }
+
+    .result__trophy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 4rem 0;
+      i {
+        font-size: 12rem;
+        color: var(--color-white);
+      }
+    }
+
+    .result__score {
+      margin: 2rem 0;
+    }
+    .result__footer {
+      // border-top: 2px solid var(--color-gray);
+      // padding: 2rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4rem;
+      gap: 2rem;
+      .btn {
+        &:hover {
+          background-color: var(--color-secondary-2);
+          color: var(--color-secondary-3);
+          border: 2px solid var(--color-secondary-2);
+        }
+        gap: 1rem;
+        i {
+          font-size: 1.8rem;
+        }
+      }
+    }
   }
 
   &__detail {
   }
 }
-
+// --------------------------------------------------------//
 .body-style {
   width: 100%;
   height: auto;
