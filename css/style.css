@@ -44,7 +44,7 @@ button {
   justify-content: center;
   border: none;
   outline: none;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   border-radius: 0.4rem;
   background-color: var(--color-secondary-3);
   font-size: 1.4rem;
@@ -103,8 +103,8 @@ p {
 }
 
 .app {
-  width: 75%;
-  max-width: 50rem;
+  width: 70%;
+  max-width: 45rem;
   height: min-content;
   background-color: var(--color-secondary-3);
   border-radius: 1rem;
@@ -250,12 +250,21 @@ p {
   margin: 4rem 0;
 }
 .body__result .result__trophy i {
-  font-size: 12rem;
+  font-size: 10rem;
   color: var(--color-white);
 }
 .body__result .result__score {
   color: var(--color-white);
   margin: 2rem 0;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.body__result .result__score b {
+  font-size: 2.1rem;
+  color: var(--color-secondary-2);
+  padding: 0.5rem;
 }
 .body__result .result__footer {
   width: 100%;

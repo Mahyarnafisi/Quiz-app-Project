@@ -46,7 +46,7 @@ button {
   justify-content: center;
   border: none;
   outline: none;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   border-radius: 0.4rem;
   background-color: var(--color-secondary-3);
   font-size: 1.4rem;
@@ -104,8 +104,8 @@ p {
 // !--------------------------------------------//
 
 .app {
-  width: 75%;
-  max-width: 50rem;
+  width: 70%;
+  max-width: 45rem;
   height: min-content;
   background-color: var(--color-secondary-3);
   border-radius: 1rem;
@@ -264,7 +264,7 @@ p {
       justify-content: center;
       margin: 4rem 0;
       i {
-        font-size: 12rem;
+        font-size: 10rem;
         color: var(--color-white);
       }
     }
@@ -272,6 +272,15 @@ p {
     .result__score {
       color: var(--color-white);
       margin: 2rem 0;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      b {
+        font-size: 2.1rem;
+        color: var(--color-secondary-2);
+        padding: 0.5rem;
+      }
     }
     .result__footer {
       // border-top: 2px solid var(--color-gray);
