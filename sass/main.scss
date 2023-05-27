@@ -255,7 +255,7 @@ p {
 
     .result__title {
       align-self: center;
-      margin: 2rem 0;
+      // margin: 2rem 0;
     }
 
     .result__trophy {
@@ -270,6 +270,7 @@ p {
     }
 
     .result__score {
+      color: var(--color-white);
       margin: 2rem 0;
     }
     .result__footer {
@@ -281,6 +282,11 @@ p {
       justify-content: center;
       margin-top: 4rem;
       gap: 2rem;
+      .btn:nth-child(1) {
+        background-color: var(--color-secondary-1);
+        color: var(--color-secondary-3);
+        border: 2px solid var(--color-secondary-1);
+      }
       .btn {
         &:hover {
           background-color: var(--color-secondary-2);

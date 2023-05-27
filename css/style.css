@@ -242,7 +242,6 @@ p {
 }
 .body__result .result__title {
   align-self: center;
-  margin: 2rem 0;
 }
 .body__result .result__trophy {
   display: flex;
@@ -255,6 +254,7 @@ p {
   color: var(--color-white);
 }
 .body__result .result__score {
+  color: var(--color-white);
   margin: 2rem 0;
 }
 .body__result .result__footer {
@@ -264,6 +264,11 @@ p {
   justify-content: center;
   margin-top: 4rem;
   gap: 2rem;
+}
+.body__result .result__footer .btn:nth-child(1) {
+  background-color: var(--color-secondary-1);
+  color: var(--color-secondary-3);
+  border: 2px solid var(--color-secondary-1);
 }
 .body__result .result__footer .btn {
   gap: 1rem;
