@@ -93,6 +93,10 @@ p {
   line-height: 1.5;
 }
 
+li {
+  line-height: 1.5;
+}
+
 .container {
   width: 100%;
   padding: 0 1vw;
@@ -100,6 +104,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 }
 
 .app {
@@ -166,6 +171,7 @@ p {
   font-size: 1.8rem;
 }
 .body__menu .rules {
+  width: 100%;
   list-style: none;
   display: flex;
   align-items: center;

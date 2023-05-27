@@ -92,6 +92,9 @@ p {
   font-weight: 500;
   line-height: 1.5;
 }
+li {
+  line-height: 1.5;
+}
 // !--------------------------------------------//
 .container {
   width: 100%;
@@ -100,6 +103,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 }
 // !--------------------------------------------//
 
@@ -173,6 +177,8 @@ p {
       }
     }
     .rules {
+      width: 100%;
+      // padding: 0 2rem;
       list-style: none;
       display: flex;
       align-items: center;
