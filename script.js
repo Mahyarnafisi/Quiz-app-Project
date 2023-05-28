@@ -4,6 +4,10 @@ const containerMenu = document.getElementById("menu");
 const containerQuiz = document.getElementById("quiz");
 const containerResult = document.getElementById("result");
 //
+let activeQuestion = true;
+//
+let numCorrectAns = 0;
+let numWrongAns = 0;
 
 window.addEventListener("load", () => {
   quizRules();
@@ -44,12 +48,12 @@ const quizRules = () => {
     </div>`;
     const containerOption = document.querySelector(".option-container");
     quizQuestions[0]["options"].forEach((option, i) => {
+      activeQuestion = true;
       containerOption.innerHTML += `<p class="option ">${i + 1}. ${option}</p>`;
     });
 
+    // Click on answer Correct or Wrong
     const elementOptions = document.querySelectorAll(".option");
-
-    let activeQuestion = true;
     elementOptions.forEach((option, i) => {
       option.addEventListener(
         "click",
@@ -57,9 +61,13 @@ const quizRules = () => {
           if (i + 1 === quizQuestions[0]["answer"] && activeQuestion === true) {
             activeQuestion = false;
             option.classList.add("correct");
+            numCorrectAns++;
+            console.log(numCorrectAns, numWrongAns);
           } else if (i + 1 !== quizQuestions[0]["answer"] && activeQuestion === true) {
             activeQuestion = false;
             option.classList.add("wrong");
+            numWrongAns++;
+            console.log(numCorrectAns, numWrongAns);
           }
         },
         { once: true }
