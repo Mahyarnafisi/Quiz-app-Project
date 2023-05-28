@@ -29,20 +29,41 @@ const quizRules = () => {
   const btnStartQuiz = document.querySelector(".menu__btn--start");
   const btnInfo = document.querySelector(".menu__btn--info");
 
+  // start button and go to first question
   btnStartQuiz.addEventListener("click", () => {
     containerMenu.classList.replace("display", "no-display");
     containerQuiz.classList.replace("no-display", "display");
 
-    containerQuiz.innerHTML = ` <h4 class="quiz__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, provident?</h4>
+    containerQuiz.innerHTML = ` <h4 class="quiz__question">${quizQuestions[0]["key"]}. ${quizQuestions[0]["question"]}</h4>
     <div class="option-container">
-      <p class="option wrong">Lorem ipsum dolor sit amet</p>
-      <p class="option deactive">Lorem ipsum dolor sit.</p>
-      <p class="option deactive">Lorem ipsum dolor sit amet consectetur.</p>
-      <p class="option deactive">Lorem ipsum dolor sit .</p>
+     
     </div>
     <div class="quiz__footer footer">
       <p class="timer">Timer left: 00:30 Sec</p>
       <button class="btn">Next Question <i class="fa-solid fa-chevron-right"></i></button>
     </div>`;
+    const containerOption = document.querySelector(".option-container");
+    quizQuestions[0]["options"].forEach((option, i) => {
+      containerOption.innerHTML += `<p class="option ">${i + 1}. ${option}</p>`;
+    });
+
+    const elementOptions = document.querySelectorAll(".option");
+
+    elementOptions.forEach((option, i) => {
+      let activeQuestion = true;
+      option.addEventListener(
+        "click",
+        () => {
+          if (i + 1 === quizQuestions[0]["answer"] && activeQuestion === true) {
+            activeQuestion = false;
+            option.classList.add("correct");
+          } else if (i + 1 !== quizQuestions[0]["answer"] && activeQuestion === true) {
+            activeQuestion = false;
+            option.classList.add("wrong");
+          }
+        },
+        { once: true }
+      );
+    });
   });
 };

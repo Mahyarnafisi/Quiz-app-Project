@@ -205,6 +205,7 @@ li {
     .quiz__question {
       margin-bottom: 4rem;
       line-height: 1.5;
+      align-self: flex-start;
     }
     .option-container {
       width: 100%;
@@ -378,6 +379,7 @@ li {
   color: var(--color-white);
   opacity: 75%;
   cursor: not-allowed !important;
+
   filter: contrast(70%);
   &:hover {
     border: 2px solid var(--color-bg-2) !important;
@@ -388,13 +390,13 @@ li {
 .correct {
   background-color: var(--color-primary-1) !important;
   color: var(--color-bg-1) !important;
-  border: var(--color-primary-1) !important;
+  border: 2px solid var(--color-primary-1) !important;
 }
 
 .wrong {
   background-color: var(--color-primary-3) !important;
   color: var(--color-bg-1) !important;
-  border: var(--color-primary-3) !important;
+  border: 2px solid var(--color-primary-3) !important;
 }
 
 .correct-tag {
