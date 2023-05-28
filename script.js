@@ -49,8 +49,8 @@ const quizRules = () => {
 
     const elementOptions = document.querySelectorAll(".option");
 
+    let activeQuestion = true;
     elementOptions.forEach((option, i) => {
-      let activeQuestion = true;
       option.addEventListener(
         "click",
         () => {
