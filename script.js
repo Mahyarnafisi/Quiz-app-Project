@@ -61,11 +61,13 @@ const quizRules = () => {
           if (i + 1 === quizQuestions[0]["answer"] && activeQuestion === true) {
             activeQuestion = false;
             option.classList.add("correct");
+            option.innerHTML += `<span class="correct-tag">Correct</span>`;
             numCorrectAns++;
             console.log(numCorrectAns, numWrongAns);
           } else if (i + 1 !== quizQuestions[0]["answer"] && activeQuestion === true) {
             activeQuestion = false;
             option.classList.add("wrong");
+            option.innerHTML += `<span class="wrong-tag">Wrong</span>`;
             numWrongAns++;
             console.log(numCorrectAns, numWrongAns);
           }
