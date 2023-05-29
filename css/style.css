@@ -36,6 +36,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  color: #929922;
 }
 
 button {
