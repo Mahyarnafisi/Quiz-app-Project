@@ -78,6 +78,7 @@ const quizRules = () => {
             option.classList.add("wrong");
             option.innerHTML += `<span class="wrong-tag">Wrong</span>`;
             numWrongAns++;
+            quizQuestions[0]["answerStatus"] = false;
             btnNextQuestion();
             console.log(numCorrectAns, numWrongAns);
           }
