@@ -13,6 +13,7 @@ const quizQuestions = [
     question: "What does HTML stand for?",
     options: ["Hyper Text Markup Language", "Hyperlink and markup language", "Home tool and markup language", "Hyper test making language"],
     answer: 1,
+    answerStatus: null,
   },
 
   // question2

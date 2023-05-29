@@ -44,7 +44,7 @@ const quizRules = () => {
     </div>
     <div class="quiz__footer footer">
       <p class="timer">Timer left: 00:30 Sec</p>
-      <button class="btn">Next Question <i class="fa-solid fa-chevron-right"></i></button>
+      
     </div>`;
     const containerOption = document.querySelector(".option-container");
     quizQuestions[0]["options"].forEach((option, i) => {
@@ -58,22 +58,33 @@ const quizRules = () => {
       option.addEventListener(
         "click",
         () => {
+          // function EXpression to make the NEXT QUESTION BUTTON
+          const btnNextQuestion = function () {
+            document.querySelector(
+              ".quiz__footer"
+            ).innerHTML += `<button class="btn">Next Question <i class="fa-solid fa-chevron-right"></i></button> `;
+          };
+          //
           if (i + 1 === quizQuestions[0]["answer"] && activeQuestion === true) {
             activeQuestion = false;
             option.classList.add("correct");
             option.innerHTML += `<span class="correct-tag">Correct</span>`;
             numCorrectAns++;
+            quizQuestions[0]["answerStatus"] = true;
+            btnNextQuestion();
             console.log(numCorrectAns, numWrongAns);
           } else if (i + 1 !== quizQuestions[0]["answer"] && activeQuestion === true) {
             activeQuestion = false;
             option.classList.add("wrong");
             option.innerHTML += `<span class="wrong-tag">Wrong</span>`;
             numWrongAns++;
+            btnNextQuestion();
             console.log(numCorrectAns, numWrongAns);
           }
         },
         { once: true }
       );
+      //
     });
   });
 };
