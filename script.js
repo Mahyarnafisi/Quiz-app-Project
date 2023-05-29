@@ -58,7 +58,7 @@ const quizRules = () => {
       option.addEventListener(
         "click",
         () => {
-          // function EXpression to make the NEXT QUESTION BUTTON
+          // function Expression to make the NEXT QUESTION BUTTON
           const btnNextQuestion = function () {
             document.querySelector(
               ".quiz__footer"
