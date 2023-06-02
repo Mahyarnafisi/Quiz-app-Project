@@ -217,6 +217,7 @@ li {
       gap: 1rem;
     }
     .option {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -391,7 +392,7 @@ li {
 .correct {
   background-color: var(--color-primary-1) !important;
   color: var(--color-bg-1) !important;
-  border: 2px solid var(--color-primary-1) !important;
+  // border: 2px solid var(--color-primary-1) !important;
 }
 
 .wrong {
@@ -401,16 +402,24 @@ li {
 }
 
 .correct-tag {
+  position: absolute;
+  top: 50%;
+  right: -2rem;
+  transform: translate(-50%, -50%);
   font-size: 1.4rem;
-  padding: 0.7rem 1rem;
+  padding: 0.5rem;
   border-radius: 0.8rem;
   background-color: var(--color-secondary-3);
   color: var(--color-primary-1);
 }
 
 .wrong-tag {
+  position: absolute;
+  top: 50%;
+  right: -2rem;
+  transform: translate(-50%, -50%);
   font-size: 1.4rem;
-  padding: 0.7rem 1rem;
+  padding: 0.5rem;
   border-radius: 0.8rem;
   background-color: var(--color-secondary-3);
   color: var(--color-primary-3);
