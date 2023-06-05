@@ -1,5 +1,5 @@
 "use strick";
-
+//
 const containerMenu = document.getElementById("menu");
 const containerQuiz = document.getElementById("quiz");
 const containerResult = document.getElementById("result");
@@ -60,9 +60,7 @@ const quizRules = () => {
         () => {
           // function Expression to make the NEXT QUESTION BUTTON
           const btnNextQuestion = function () {
-            document.querySelector(
-              ".quiz__footer"
-            ).innerHTML += `<button class="btn">Next Question <i class="fa-solid fa-chevron-right"></i></button> `;
+            document.querySelector(".quiz__footer").innerHTML += `<button class="btn">Next Question <i class="fa-solid fa-chevron-right"></i></button> `;
           };
           //
           if (i + 1 === quizQuestions[0]["answer"] && activeQuestion === true) {
